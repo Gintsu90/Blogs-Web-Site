@@ -1,12 +1,10 @@
-import express from "express";
-import cors from "cors";
-import dotenv from "dotenv";
+import config from "./utils/config.js";
+import http from "http";
+import app from "./app.js";
+import logger from "./utils/logger.js"
 
-dotenv.config();
-const app = express();
-const PORT = process.env.PORT || 3001;
+const server = http.createServer(app)
 
-app.use(cors())
-
-app.listen(PORT);
-console.log(`Server running on ${PORT}`)
+server.listen(config.PORT, () => {
+    logger.info(`Server running on ${config.PORT}`)
+})
