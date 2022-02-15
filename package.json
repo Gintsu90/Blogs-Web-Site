@@ -1,0 +1,29 @@
+{
+  "name": "blogs-web-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gintsu90/Blogs-Web-Site.git"
+  },
+  "author": "Toni Pekkala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gintsu90/Blogs-Web-Site/issues"
+  },
+  "homepage": "https://github.com/Gintsu90/Blogs-Web-Site#readme"
+}
