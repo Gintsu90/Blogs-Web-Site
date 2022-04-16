@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1lZ2FtYW4iLCJpZCI6IjYyNGViYTI3ZTliMWUyN2IxMzFmMmQxOSIsImlhdCI6MTY0OTUwMTg3NywiZXhwIjoxNjQ5NTA1NDc3fQ.K5UE0-ayVkMbQm4waQfcGkSXVU-YnlsmyTcr9ARoFGw
+
+{
+    "title": "Mega Pelit",
+    "content": "jee",
+    "likes": 100,
+    "userId": "624eba27e9b1e27b131f2d19"
+}
