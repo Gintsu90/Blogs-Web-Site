@@ -25,7 +25,7 @@ const Login = ({handleLogin, handleUsername, handlePassword, password, username,
           <button type="submit">Login</button>
         </form>
       </div>
-      : "Logged In"
+      : <p>{user.name} logged in</p>
     }
     </>
     

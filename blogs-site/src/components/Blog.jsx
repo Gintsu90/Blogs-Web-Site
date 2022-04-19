@@ -8,11 +8,8 @@ const Blog = ({ blogs }) => {
     <>
       {blog ? 
         <div>
-          <Link to="/">
-          Home
-          </Link>
           <p>{blog.content}</p>
-      </div>
+        </div>
       : ""
       }
     </>
