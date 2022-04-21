@@ -31,6 +31,25 @@ blogsRouter.post("/", middleware.userExtractor, async(req, res) => {
     res.json(addBlog);
 });
 
+blogsRouter.put("/:id", middleware.userExtractor, (req, res) => {
+    const body = req.body;
+    const user = User.findById(req.user.id)
+
+    const blog = {
+        title: body.title,
+        author: user.username,
+        content: body.content,
+        likes: body.likes,
+        user: user._id,
+    };
+    
+    Blog.findByIdAndUpdate(req.params.id, blog, {new: true})
+    .then(updatedBlog => {
+        console.log(updatedBlog)
+        res.json(updatedBlog);
+    })
+})
+
 blogsRouter.delete("/:id",middleware.userExtractor, async(req, res) => {
 
     const user = req.user.id

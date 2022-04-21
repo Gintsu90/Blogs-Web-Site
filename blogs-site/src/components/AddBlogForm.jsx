@@ -4,8 +4,8 @@ const AddBlogForm = ({handleAddBlog, newTitle, newContent, handleTitleChange, ha
   return (
     <div>
         <form onSubmit={handleAddBlog}>
-            <input type="text" value={newTitle} onChange={({target}) => handleTitleChange(target.value)}/>
-            <textarea type="text" name="newContent"  value={newContent} onChange={({target}) => handleContentChange(target.value)}/>
+            <input type="text" name="newTitle" placeholder="Title"value={newTitle} onChange={({target}) => handleTitleChange(target.value)}/>
+            <textarea type="text" name="newContent" value={newContent} placeholder="Content" onChange={({target}) => handleContentChange(target.value)}/>
             <button type="submit">Add</button>
         </form>
     </div>

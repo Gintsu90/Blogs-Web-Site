@@ -1,0 +1,12 @@
+PUT http://localhost:3001/api/blogs/6213bc7d1a47b77566d42fb1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1lZ2FtYW4iLCJpZCI6IjYyNGViYTI3ZTliMWUyN2IxMzFmMmQxOSIsImlhdCI6MTY1MDU0NzYyNywiZXhwIjoxNjUwNTUxMjI3fQ.UxhjeE7DlAHrT61bmpx6w_w9-KJmzhOXsDpZKFH6Xec
+
+
+{
+"title": "Blogi",
+"author": "root",
+"content": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"likes": 33,
+"user": "621395093d1ac5674fe910cd"
+}

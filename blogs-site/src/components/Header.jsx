@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 
-const Header = ({user}) => {
+const Header = ({user, handleLogout}) => {
   return (
     <div className="header">
         <Link to="/"><h1>My Blogs</h1></Link>
@@ -13,7 +13,7 @@ const Header = ({user}) => {
         : 
           <>
             <Link to="add-blog" className="add-blog">Add Blog</Link>
-            <p>Logout</p>
+            <p className="logout" onClick={handleLogout}>Logout</p>
           </>
         
       }
